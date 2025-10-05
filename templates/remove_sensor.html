@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <form action="/sensors/del_sensor" method="post">
+
+        <select name="nome">
+            {% for nome, valor in sensores.items() %}
+                <option value="{{ nome }}">{{ nome }}</option>
+            {% endfor %}
+        </select>
+
+        <p><input type="submit" value="Deletar"></p>
+
+    </form>
+
+</body>
+</html>

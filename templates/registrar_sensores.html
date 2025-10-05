@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="vertical-center">
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-body">
+                    <h3>Registrar Novo Sensor</h3>
+                    <form action="{{ url_for('sensors_blue.registrar_sensores') }}" method="POST">
+                        <p>Nome do Sensor:</p>
+                        <p><input type="text" name="nome" placeholder="Ex: Temperatura" required/></p>                      
+                        <p>Valor do Sensor:</p>
+                        <p><input type="text" name="valor" placeholder="Ex: 25" required/></p>
+                        
+                        <p><input type="submit" value="Cadastrar" class="btn btn-primary"/></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

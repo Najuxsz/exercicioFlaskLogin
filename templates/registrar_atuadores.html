@@ -1,0 +1,25 @@
+{% extends"base.html" %}
+{% block content%}
+
+<html>
+    <body>
+
+        <form action = "http://localhost:8080/atuadores/registrar_atuadores" method = "post">
+
+            <p>Nome do atuador:</p>
+            <p><input type = "text" name = "nomeAtu" placeholder="Nome" required/></p>
+
+            <p>Valor do atuador:</p>
+            <p><input type = "text" name = "valorAtu" placeholder="Valor"required/></p>
+
+            <p><input type = "submit" value = "Cadastrar Atuador" /></p>
+
+        </form>
+
+        <p>Voltar para <a href="/home">página inicial</a>!</p>
+
+
+    </body>
+</html>
+
+{% endblock%}

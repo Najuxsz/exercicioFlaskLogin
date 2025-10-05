@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <form action="/atuadores/del_atuador" method="post">
+
+        <select name="nome">
+            {% for nome, valor in atuadores.items() %}
+                <option value="{{ nome }}">{{ nome }}</option>
+            {% endfor %}
+        </select>
+
+        <p><input type="submit" value="Deletar"></p>
+
+    </form>
+
+</body>
+</html>
